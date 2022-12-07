@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JS Drum Kit</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <div class="drums-kit">
+    <div class="drum-kit__container">
+      <img class="drum-kit__background" src="./assets/images/drums.jpg" alt="Drum kit">
+      <div class="drum-kit__parts">
+        <div data-key="97" class="drum-kit__key">
+          <span class="drum-kit__key-name">A</span>
+          <span class="drum-kit__key-type">Clap</span>
+          <audio data-key="97" src="./assets/sounds/clap.wav"></audio>
+        </div>
+        <div data-key="115" class="drum-kit__key">
+          <span class="drum-kit__key-name">S</span>
+          <span class="drum-kit__key-type">Hihat</span>
+          <audio data-key="115" src="./assets/sounds/hihat.wav"></audio>
+        </div>
+        <div data-key="100" class="drum-kit__key">
+          <span class="drum-kit__key-name">D</span>
+          <span class="drum-kit__key-type">Kick</span>
+          <audio data-key="100" src="./assets/sounds/kick.wav"></audio>
+        </div>
+        <div data-key="102" class="drum-kit__key">
+          <span class="drum-kit__key-name">F</span>
+          <span class="drum-kit__key-type">Boom</span>
+          <audio data-key="102" src="./assets/sounds/boom.wav"></audio>
+        </div>
+        <div data-key="103" class="drum-kit__key">
+          <span class="drum-kit__key-name">G</span>
+          <span class="drum-kit__key-type">openhat</span>
+          <audio data-key="103" src="./assets/sounds/openhat.wav"></audio>
+        </div>
+        <div data-key="104" class="drum-kit__key">
+          <span class="drum-kit__key-name">H</span>
+          <span class="drum-kit__key-type">Ride</span>
+          <audio data-key="104" src="./assets/sounds/ride.wav"></audio>
+        </div>
+        <div data-key="106" class="drum-kit__key">
+          <span class="drum-kit__key-name">J</span>
+          <span class="drum-kit__key-type">Snare</span>
+          <audio data-key="106" src="./assets/sounds/snare.wav"></audio>
+        </div>
+        <div data-key="107" class="drum-kit__key">
+          <span class="drum-kit__key-name">K</span>
+          <span class="drum-kit__key-type">Tom</span>
+          <audio data-key="107" src="./assets/sounds/tom.wav"></audio>
+        </div>
+        <div data-key="108" class="drum-kit__key">
+          <span class="drum-kit__key-name">L</span>
+          <span class="drum-kit__key-type">Tink</span>
+          <audio data-key="108" src="./assets/sounds/tink.wav"></audio>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="./js/drums.js"></script> 
+</body>
+</html>
