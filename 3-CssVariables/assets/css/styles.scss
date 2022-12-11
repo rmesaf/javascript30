@@ -1,0 +1,57 @@
+:root {
+  --blurriness: 0px;
+  --frameColor: #000;
+  --spacing: 0px
+}
+
+body {
+  color: #fff;
+  background-color: #b5a0a0;
+}
+
+.css-variables {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.css-variables__form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 600px;
+  width: 100%;
+}
+
+.css-variables__form > div {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.css-variables__form label {
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.css-variables__image {
+  border-radius: 20px;
+  margin: 20px;
+  max-width: 600px;
+  overflow: hidden;
+  width: 100%;
+  padding: var(--spacing);
+  background-color: var(--frameColor);
+}
+
+.css-variables__image > img {
+  filter: blur(var(--blurriness));
+  height: auto;
+  width: 100%;
+}
+
+.css-variables__title > span {
+  color: var(--frameColor)
+}
+
