@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Variables</title>
+  <link rel="stylesheet" href="./assets/css/styles.scss">
+</head>
+<body>
+  <div class="css-variables">
+    <h1 class="css-variables__title">
+      Playing with CSS Variables via <span>JS</span>
+    </h1>
+
+    <div class="css-variables__form">
+      <div>
+        <label for="frame">Frame dimentions:</label>
+        <input type="range" id="frame" name="spacing" min="0" max="200" value="0" data-sizing="px">
+      </div>
+      <div>
+        <label for="image-blur">Image blurriness:</label>
+        <input type="range" id="image-blur" name="blurriness" min="0" max="24" value="0" data-sizing="px">
+      </div>
+      <div>
+        <label for="frame-color">Frame background:</label>
+        <input type="color" id="frame-color" name="frameColor">
+      </div>
+    </div>
+    <div class="css-variables__image">
+      <img src="./assets/images/tiger.jpg" alt="Tiger in the nature" />
+    </div>
+  </div>
+  <script src="./assets/js/variables.js"></script> 
+</body>
+</html>
