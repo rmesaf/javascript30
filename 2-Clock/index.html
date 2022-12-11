@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JS Clockt</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet"> 
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            clock: ['"Orbitron"', "sans-serif"],
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body>
+  <div class="flex flex-col items-center justify-center w-screen h-screen bg-slate-200">
+    <div class="clock relative w-80 h-80 border-solid border-indigo-600 border-8 rounded-full translate-y-4">
+      <div class="hours
+        w-1/2 h-2 bg-indigo-300 border-solid border-black
+        absolute top-1/2
+        origin-right rotate-90"></div>
+      <div class="minutes
+        w-1/2 h-2 bg-indigo-400 border-solid border-black
+        absolute top-1/2
+        origin-right rotate-90"></div>
+      <div class="seconds
+        w-1/2 h-2 bg-indigo-500 border-solid border-black
+        absolute top-1/2
+        origin-right rotate-90"></div>
+    </div>
+    <div class="inline-flex digital mt-4 font-clock text-2xl">
+      <span class="digital-hours">00</span>
+      <span class="digital-separator">:</span>
+      <span class="digital-minutes">00</span>
+      <span class="digital-separator">:</span>
+      <span class="digital-seconds">00</span>
+    </div>
+  </div>
+  <script src="./js/clock.js"></script> 
+</body>
+</html>
